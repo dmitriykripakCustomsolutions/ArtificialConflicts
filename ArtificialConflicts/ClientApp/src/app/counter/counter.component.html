@@ -4,4 +4,9 @@
 
 <p aria-live="polite">Current count: <strong>{{ currentCount }}</strong></p>
 
+<ng-container *ngIf="countNumeralRepresentation">
+  <p aria-live="polite"><strong>{{countNumeralRepresentation}}</strong></p>
+</ng-container>
+
+<button class="btn btn-primary" (click)="numeralRepresentation()">Display Numeral Representation</button>
 <button class="btn btn-primary" (click)="incrementCounter()">Increment</button>
