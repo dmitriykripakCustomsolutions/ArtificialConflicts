@@ -1,0 +1,5 @@
+<p *ngIf="!temperatures"><em>Loading...</em></p>
+
+<ng-container *ngIf="temperatures">
+  <p *ngFor="let temp of temperatures">{{temp}}</p>
+</ng-container>

@@ -6,8 +6,13 @@ import { Component } from '@angular/core';
 })
 export class CounterComponent {
   public currentCount = 0;
+  public currentCountSquare: number;
 
   public incrementCounter() {
     this.currentCount++;
+  }
+
+  public square() {
+    this.currentCountSquare = this.currentCount * this.currentCount;
   }
 }
