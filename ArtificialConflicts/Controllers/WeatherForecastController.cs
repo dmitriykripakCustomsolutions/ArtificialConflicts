@@ -35,5 +35,12 @@ namespace ArtificialConflicts.Controllers
 			})
 			.ToArray();
 		}
+
+		[HttpGet]
+		[Route("get-addons")]
+		public IEnumerable<string> GetAddons()
+		{
+			return new List<string> {"First addon", "Second addon", "Third addon", "Fourth addon", "Fifth addon" };
+		}
 	}
 }

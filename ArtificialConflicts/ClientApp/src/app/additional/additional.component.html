@@ -1,0 +1,5 @@
+<p *ngIf="!addons"><em>Loading...</em></p>
+
+<ng-container *ngIf="addons">
+  <p *ngFor="let addon of addons">{{addon}}</p>
+</ng-container>

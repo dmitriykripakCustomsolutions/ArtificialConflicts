@@ -6,8 +6,20 @@ import { Component } from '@angular/core';
 })
 export class CounterComponent {
   public currentCount = 0;
+  public currentCountFactorial: number;
 
   public incrementCounter() {
     this.currentCount++;
   }
+
+  public calculateFactorial() {
+    this.currentCountFactorial = this.factorial(this.currentCount);
+  }
+
+  factorial(num: number): number {
+    if (num === 1) return 1;
+    else if (num === 0) return 0;
+    else return num * this.factorial(num - 1);
+}
+
 }
