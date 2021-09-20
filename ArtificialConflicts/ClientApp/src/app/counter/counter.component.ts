@@ -6,8 +6,15 @@ import { Component } from '@angular/core';
 })
 export class CounterComponent {
   public currentCount = 0;
+  public root: number;
 
   public incrementCounter() {
     this.currentCount++;
+  }
+
+  public getRoot() {
+    if (this.currentCount > 0) {
+      this.root = Math.sqrt(this.currentCount);
+    }
   }
 }
