@@ -32,6 +32,8 @@ namespace ArtificialConflicts.Controllers
 				Date = DateTime.Now.AddDays(index),
 				TemperatureC = rng.Next(-20, 55),
 				Summary = Summaries[rng.Next(Summaries.Length)],
+				TemperatureK = 273.15 + rng.Next(-20, 55),
+
 				Sign = index.ToString()
 			})
 			.ToArray();
