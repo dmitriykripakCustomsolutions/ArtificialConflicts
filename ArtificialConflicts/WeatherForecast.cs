@@ -11,6 +11,7 @@ namespace ArtificialConflicts
 		public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 
 		public string Summary { get; set; }
+		public string Sign => new Random().Next(1, 30).ToString();
 		public string Signature { get; set; }
 	}
 }

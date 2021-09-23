@@ -6,6 +6,10 @@
 
 <button class="btn btn-primary" (click)="incrementCounter()">Increment</button>
 
+<p *ngIf="root">Root of a current count : <strong>{{ root }}</strong></p>
+
+<button class="btn btn-primary" (click)="getRoot()">Get root</button>
+
 <p aria-live="polite">Current count salted: <strong>{{ salted }}</strong></p>
 
 <button class="btn btn-primary" (click)="addSalt()">Add salt</button>

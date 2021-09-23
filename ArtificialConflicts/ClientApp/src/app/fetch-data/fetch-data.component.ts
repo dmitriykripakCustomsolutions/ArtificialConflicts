@@ -21,4 +21,5 @@ interface WeatherForecast {
   temperatureF: number;
   summary: string; 
   signature: string;
+  sign: string;
 }
