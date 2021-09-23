@@ -9,6 +9,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { FetchTemperatureComponent } from './fetch-temperature/fetch-temperature.component';
 import { AdditionalComponent } from './additional/additional.component';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { AdditionalComponent } from './additional/additional.component';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
+    FetchTemperatureComponent,
     AdditionalComponent
   ],
   imports: [
@@ -28,7 +30,8 @@ import { AdditionalComponent } from './additional/additional.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'additional', component: AdditionalComponent },
+      { path: 'fetch-temperature', component: FetchTemperatureComponent },
+      { path: 'additional', component: AdditionalComponent }
     ])
   ],
   providers: [],

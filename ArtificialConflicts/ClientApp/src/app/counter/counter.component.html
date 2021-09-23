@@ -6,6 +6,12 @@
 
 <button class="btn btn-primary" (click)="incrementCounter()">Increment</button>
 
+<ng-container *ngIf="currentCountSquare">
+  <p aria-live="polite">Current Square: <strong>{{ currentCountSquare }}</strong></p>
+</ng-container>
+
+<button class="btn btn-primary" (click)="square()">Calculate Current Square</button>
+
 <ng-container *ngIf="currentCountFactorial">
   <p aria-live="polite">Current Factorial: <strong>{{ currentCountFactorial }}</strong></p>
 </ng-container>

@@ -37,6 +37,13 @@ namespace ArtificialConflicts.Controllers
 		}
 
 		[HttpGet]
+		[Route("temperature")]
+		public IEnumerable<string> GetTemperature()
+		{
+			return new List<string> { "22C", "101F", "300K", "35C"};
+		}
+
+		[HttpGet]
 		[Route("get-addons")]
 		public IEnumerable<string> GetAddons()
 		{
